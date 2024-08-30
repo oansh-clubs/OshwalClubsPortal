@@ -176,7 +176,22 @@ nav .navigation ul li a:hover{
 }
 
 /*Clubs*/
-
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.tab {
+    margin: 0 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+.tab.active {
+    border-bottom: 2px solid orange;
+    transition: .75s;
+}
 #club{
     padding: 8vw 8vw 0 8vw;
     text-align: center;
@@ -188,7 +203,12 @@ nav .navigation ul li a:hover{
     grid-gap: 1rem;
     margin-top: 50px;
 }
-
+#club .day{
+    display: none;
+}
+#club .day.active{
+    display: block;
+}
 #club .clubs{
     text-align: start;
     background: #F9F9FF;
