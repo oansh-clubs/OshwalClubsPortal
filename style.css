@@ -213,6 +213,7 @@ nav .navigation ul li a:hover{
     text-align: start;
     background: #F9F9FF;
     height: 100%;
+    cursor: pointer;
 }
 
 #club .clubs img{
