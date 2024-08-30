@@ -63,7 +63,13 @@
     <!--Clubs-->
     <section id="club">
         <h1>Clubs</h1>
+        <div class="tabs">
+            <div id="wednesdayTab" class="tab active" onclick="showClubs('wednesday')">Wednesday Clubs</div>
+            <div id="nonWednesdayTab" class="tab" onclick="showClubs('nonWednesday')">Non-Wednesday Clubs</div>
+        </div>
+        <div id="wednesdayClubs" class="day active">
         <div class="clubs-box">
+            
 
             <div class="clubs">
                 <img src="./books.png" alt="">
@@ -264,9 +270,12 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        </div>
+        
             <!--NON-WEDNESDAY CLUBS-->
-
+        <div id="nonWednesdayClubs" class="day">
+        <div class="clubs-box">
             <div class="clubs">
                 <img src="" alt="">
                 <div class="details">
@@ -328,6 +337,7 @@
             </div>
 
 
+        </div>
         </div>
 
 
@@ -392,6 +402,32 @@
                 
             </div>
     </section>
+    <script>
+        function showClubs(type) {
+           
+            var wednesdayTab = document.getElementById('wednesdayTab');
+            var nonWednesdayTab = document.getElementById('nonWednesdayTab');
+            var wednesdayClubs = document.getElementById('wednesdayClubs');
+            var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
+
+            // Set active class based on type
+            if (type === 'wednesday') {
+                wednesdayTab.classList.add('active');
+                nonWednesdayTab.classList.remove('active');
+                wednesdayClubs.classList.add('active');
+                nonWednesdayClubs.classList.remove('active');
+            } else {
+                wednesdayTab.classList.remove('active');
+                nonWednesdayTab.classList.add('active');
+                wednesdayClubs.classList.remove('active');
+                nonWednesdayClubs.classList.add('active');
+            }
+        }
+
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
 
 
 
