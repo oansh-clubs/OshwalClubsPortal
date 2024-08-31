@@ -257,6 +257,7 @@ nav .navigation ul li a:hover{
 #member{
     padding: 8vw 8vw 8vw 8vw;
     text-align: center;
+    transform: scale(0.75);
 }
 
 #member .member-box{
@@ -293,7 +294,7 @@ nav .navigation ul li a:hover{
 /*Footer*/
 
 footer{
-    padding: 8vw;
+    padding: 3vw;
     background-color: #101C32;
     display: flex;
     justify-content: space-between;
@@ -332,8 +333,7 @@ footer .copyright .pro-links i:hover{
 }
 
 footer img{
-    width: 50px;
-    height: 10px;
+    display: none;
 }
 
 /*About*/
@@ -357,11 +357,83 @@ footer img{
     letter-spacing: 1px;
 }
 
-#about-home img{
-    width: 80px;
-    height: 40px;
+#about-container .about-img img{
+    width: 800px;
+    height: 1200px;
 }
+
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 4vw 2vw 4vw;
+}
+
+#about-container .about-img{
+    width: 60%;
+}
+
+#about-container .about-text{
+    width: 40%s;
+    padding: 60px;
+    margin-bottom: 250px;
+}
+
+#about-container .about-text h2{
+    color: #29303B;
+    padding-bottom: 15px;
+}
+
+#about-container .about-text p{
+    color: #686F7A;
+    font-weight: 300;
+}
+
+#about-container .about-text .about-features{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+#about-container .about-text .about-features img{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+
+}
+
+#about-container .about-text .about-features .fea-text{
+    width: 90%;
+}
+
+#about-container .about-text .about-features .fea-text h5{
+    font-size: 16px;
+    color: #29303B;
+}
+
+/*Credits*/
+
+#credits{
+    text-align: center;
+    padding: 8vw;
+}
+
+#credits .credits-img{
+    margin-top: 10px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#credits .credits-img img{
+    width: 300px;
+}
+
 /*Events*/
+
+
 #events {
     padding: 8vw;
     text-align: center;
@@ -424,6 +496,14 @@ footer img{
     color: #000000;
 }
 
+/*Menu-btn*/
+.dropdown_menu{
+    display: none;
+}
+.toggle_btn{
+    display: none;
+}
+
 /*Mobile-View*/
 
 @media(max-width:769px){
@@ -434,11 +514,11 @@ footer img{
         width: 60px;
     }
     #menu-btn{
-        display: initial;
+        display: none;
     }
     
     #close-btn{
-        display: initial;
+        display: none;
         font-size: 1.6rem;
         color: black;
         padding: 30px 0 20px 20px;
@@ -492,6 +572,76 @@ footer img{
     .tabs {
         padding: 0px 0px;
         font-size: 0.75rem;
+    }
+
+    #about-container .about-img img{
+        width: 200px;
+        height: 300px;
+    }
+
+    .navigation{
+        display: none;
+    }
+    .toggle_btn{
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        display: block;
+        background-color: #FF8C00;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .dropdown_menu{
+        text-align: left;
+        display: block;
+        position: fixed;
+        right: 1rem;
+        height: 0;
+        top: 80px;
+        width: 200px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
+    }
+    .dropdown_menu.open{
+        height: 200px;
+        position: fixed;
+    }
+        
+ 
+    .dropdown_menu li{
+        padding: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    li{
+        list-style: none;
+
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem;
+
+    }
+    a:hover{
+        color: #FF8C00;
+        transition: 0.5s;
+    }
+    .nav{
+        display: flex;
+        padding: 2% 2%;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
