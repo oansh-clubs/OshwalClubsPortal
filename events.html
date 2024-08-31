@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSHWAL CLUBS PORTAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+
+    <nav>
+        <img src="./images/logo2.png" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    
+
+<div class="dropdown_menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Clubs</a></li>
+    <li><a class="active"  href="#">Events</a></li>
+    <li><a href="#">Contact</a></li>
+
+
+</div>
+
+    <!--Home-->
+
+    <section id="home">
+        <h2>Oshwal Senior High Clubs Portal</h2>
+        <p>Explore the vast variety of clubs offered at our Oshwal Academy Nairobi- Senior High</p>
+        <div class="btn">
+            <a class="orange" href="#">Learn More</a>
+            <a class="blue" href="#">Visit Clubs</a>
+
+        </div>
+    </section>
+
+    <!--Features-->
+    <section id="features">
+        <h1>Features</h1>
+        <p></p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-sharp fa-solid fa-eye"></i>
+                <h3>View</h3>
+                <p>Explore all the clubs in one place</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-sharp fa-regular fa-registered"></i>
+                <h3>Register</h3>
+                <p>Get started by registering your favourite clubs</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-sharp fa-regular fa-envelope"></i>
+                <h3>Contact</h3>
+                <p>Let us know if you've any difficulties in exploring our website</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Events-->
+    <section id="events">
+        <h1>Upcoming Events</h1>
+        <div class="event-box">
+            
+
+            <div class="event">
+                <img src="./images/badminton.png" alt="">
+                <div class="details">
+                    <h6>Badmintion Competition</h6>
+                    <div class="register">
+                        <a href="#">Learn More!</a>
+                    </div>
+                </div>
+            </div>
+            <!--Copy paste for more events-->
+
+            
+            
+            
+            
+        
+
+            
+        </div>
+
+
+
+
+
+
+
+    </section>
+    
+
+
+    <!--Profile-->
+    <section id="member">
+        <h1>Team Members<h1>
+            <div class="member-box">
+
+                <div class="profile">
+                    <img src="./images/person.png" alt="">
+                    <p>Mr. Gaitho</p>
+                    <h6>Club Patron</h6>
+                    <div class="pro-links">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="./images/person.png" alt="">
+                    <p>Vishal</p>
+                    <h6>Secretary</h6>
+                    <div class="pro-links">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-github"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="./images/person.png" alt="">
+                    <p>Mrithul</p>
+                    <h6>Chairman</h6>
+                    <div class="pro-links">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="./images/person.png" alt="">
+                    <p>Nidhish</p>
+                    <h6>Vice Chairman</h6>
+                    <div class="pro-links">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+
+                    </div>
+
+                </div>
+                
+            </div>
+    </section>
+
+    <!--Footer-->
+    
+    <footer>
+        <div class="copyright">
+            <p></p>Copyright ©2024 Media Hub All Rights Reserved</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#close-btn').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+
+    <!--Clubs-->
+    <script>
+        function showClubs(type) {
+           
+            var wednesdayTab = document.getElementById('wednesdayTab');
+            var nonWednesdayTab = document.getElementById('nonWednesdayTab');
+            var wednesdayClubs = document.getElementById('wednesdayClubs');
+            var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
+
+            // Set active class based on type
+            if (type === 'wednesday') {
+                wednesdayTab.classList.add('active');
+                nonWednesdayTab.classList.remove('active');
+                wednesdayClubs.classList.add('active');
+                nonWednesdayClubs.classList.remove('active');
+            } else {
+                wednesdayTab.classList.remove('active');
+                nonWednesdayTab.classList.add('active');
+                wednesdayClubs.classList.remove('active');
+                nonWednesdayClubs.classList.add('active');
+            }
+        }
+
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
