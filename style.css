@@ -13,6 +13,12 @@ body{
 }
 
 /*Global Tags*/
+.toggle_btn{
+    display: none;
+}
+.dropdown_menu{
+    display: none;
+}
 
 h1{
     font-size: 2.5rem;
@@ -259,5 +265,68 @@ nav .navigation ul li a:hover{
         padding: 10px 20px;
         cursor: pointer;
         border-bottom: 2px solid transparent;
+    }
+    .navigation{
+        display: none;
+    }
+    .toggle_btn{
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        display: block;
+        background-color: #FF8C00;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .dropdown_menu{
+        text-align: left;
+        display: block;
+        position: absolute;
+        right: 1rem;
+        height: 0;
+        top: 50px;
+        width: 200px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
+    }
+    .dropdown_menu.open{
+        height: 200px;
+    }
+        
+ 
+    .dropdown_menu li{
+        padding: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    li{
+        list-style: none;
+
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem;
+
+    }
+    a:hover{
+        color: #FF8C00;
+        transition: 0.5s;
+    }
+    .nav{
+        display: flex;
+        padding: 2% 2%;
+        justify-content: space-between;
+        align-items: center;
     }
 }
