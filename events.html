@@ -186,37 +186,9 @@
         </div>
     </footer>
 
-    <script>
-        $('#menu-btn').click(function(){
-            $('nav .navigation ul').addClass('active')
-        });
-        $('#close-btn').click(function(){
-            $('nav .navigation ul').removeClass('active')
-        });
-    </script>
 
     <!--Clubs-->
     <script>
-        function showClubs(type) {
-           
-            var wednesdayTab = document.getElementById('wednesdayTab');
-            var nonWednesdayTab = document.getElementById('nonWednesdayTab');
-            var wednesdayClubs = document.getElementById('wednesdayClubs');
-            var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
-
-            // Set active class based on type
-            if (type === 'wednesday') {
-                wednesdayTab.classList.add('active');
-                nonWednesdayTab.classList.remove('active');
-                wednesdayClubs.classList.add('active');
-                nonWednesdayClubs.classList.remove('active');
-            } else {
-                wednesdayTab.classList.remove('active');
-                nonWednesdayTab.classList.add('active');
-                wednesdayClubs.classList.remove('active');
-                nonWednesdayClubs.classList.add('active');
-            }
-        }
 
         const toggleBtn = document.querySelector(".toggle_btn")
         const toggleBtnIcon = document.querySelector(".toggle_btn i")
