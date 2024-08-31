@@ -200,16 +200,23 @@ nav .navigation ul li a:hover{
 
 #club .clubs-box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, 400px); 
+    grid-gap: .7rem;
     margin-top: 50px;
+    justify-content: center;
+    justify-items: center;
 }
 
 #club .clubs{
     text-align: start;
     background: #F9F9FF;
-    height: 100%;
-    cursor: pointer;
+    height: auto;
+    width: 80%;
+    border-radius: 10px; 
+    overflow: hidden; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #club .clubs img{
@@ -217,7 +224,10 @@ nav .navigation ul li a:hover{
     height: 60%;
     background-size: cover;
     background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
 }
+
 
 #club .clubs .details{
     padding: 15px 15px 0 15px;
@@ -574,8 +584,34 @@ footer img{
         font-size: 0.75rem;
     }
 
+    #about-container .about-text h2{
+        color: #29303B;
+        padding-bottom: 15px;
+        font-size: 0.7rem;
+    }
+    
+    #about-container .about-text p{
+        color: #686F7A;
+        font-weight: 300;
+        font-size: 0.5rem;
+    }
+
+    #about-container .about-text .about-features img{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-position: center;
+        margin-right: 0px;
+    
+    }
+
+    #about-container .about-text .about-features .fea-text h5{
+        font-size: 9px;
+        color: #29303B;
+    }
+
     #about-container .about-img img{
-        width: 200px;
+        width: 160px;
         height: 300px;
     }
 
