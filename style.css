@@ -361,6 +361,68 @@ footer img{
     width: 80px;
     height: 40px;
 }
+/*Events*/
+#events {
+    padding: 8vw;
+    text-align: center;
+}
+
+#events .event-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px); 
+    grid-gap: 1rem;
+    margin-top: 50px;
+    justify-content: center; 
+    justify-items: center;
+}
+
+#events .event {
+    text-align: start;
+    background: #F9F9FF;
+    height: auto;
+    width: 80%;
+    border-radius: 10px; 
+    overflow: hidden; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+#events .event img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#events .details {
+    padding: 15px 15px 0 15px;
+}
+
+#events .details i {
+    font-size: .9rem;
+}
+#events .event .register{
+    cursor: pointer;
+
+}
+#events .event .register a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px; 
+    border: 2px solid #fff; 
+    border-radius: 15px; 
+    background-color: black; 
+    display: inline-block; 
+    transition: background-color 0.75s, border-color 0.75s;
+}
+#events .event .register a:hover{
+    background-color: #fff;
+    border-color: #000000; 
+    color: #000000;
+}
 
 /*Mobile-View*/
 
