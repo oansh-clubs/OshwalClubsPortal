@@ -24,9 +24,22 @@
                 <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <img id="menu-btn" src="./icons/menu.png" alt="">
+            
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
+
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="#">Contact</a></li>
+        
+
+    </div>
 
     <!--Home-->
 
@@ -238,16 +251,6 @@
             <div class="clubs">
                 <img src="" alt="">
                 <div class="details">
-                    <h6>Football</h6>
-                    <div class="star">
-                        <span>Enrolled: 0</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="clubs">
-                <img src="" alt="">
-                <div class="details">
                     <h6>Basketball, Volleyball and Football</h6>
                     <div class="star">
                         <span>Enrolled: 0</span>
@@ -356,7 +359,7 @@
                 <div class="profile">
                     <img src="./images/person.png" alt="">
                     <p>Mr. Gaitho</p>
-                    <h6>Club Patron</h6>
+                    <h6>Media Hub Club Patron</h6>
                     <div class="pro-links">
                         <i class="fab fa-facebook"></i>
                         <i class="fab fa-instagram"></i>
@@ -423,14 +426,7 @@
         </div>
     </footer>
 
-    <script>
-        $('#menu-btn').click(function(){
-            $('nav .navigation ul').addClass('active')
-        });
-        $('#close-btn').click(function(){
-            $('nav .navigation ul').removeClass('active')
-        });
-    </script>
+
 
     <!--Clubs-->
     <script>
@@ -457,6 +453,17 @@
 
         function redirectToPage(pageUrl) {
             window.location.href = pageUrl;
+        }
+    </script>
+
+    <!--Menu-btn-->
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
         }
     </script>
 
