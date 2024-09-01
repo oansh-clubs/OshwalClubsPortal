@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSHWAL CLUBS PORTAL</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/logo2.png">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="clubs.html">Clubs</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a class="active" href="#">Contact</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
             
         </div>
@@ -37,42 +37,75 @@
         <li><a href="about.html">About</a></li>
         <li><a href="clubs.html">Clubs</a></li>
         <li><a href="events.html">Events</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         
 
     </div>
 
    <!--Clubs-Home-->
 
-   <section id="clubs-home">
-        <h2>Contact Us</h2>
+   <section id="about-home">
+        <h2>Contact</h2>
     </section>
 
-    <!--Contacts-->
-    
-    <div class="container">
-        <div class="image-section">
-            <img src="./images/contact.png" alt="Contact Image">
+    <!--Contact-->
+
+    <section id="contact">
+        <div class="getin">
+            <h2>Get in touch</h2>
+            <p>Can’t find what you’re looking for?
+                Fill out the form for our support team to answer your queries in a snap.</p>
+                <div class="getin-details">
+                    <h3>location</h3>
+                    <div>
+                        <i class="far fa-map get"></i>
+                        <p>B-2-10, Computer Science Lab</p>
+                    </div>
+
+                    <h3>Phone</h3>
+                    <div>
+                        <i class="fa-solid fa-phone get"></i>
+                        <p>(+254) 754622276 - Vishal <br> (+254) 716501262 - Mrithul</p>
+                    </div>
+                    
+                    <h3>Support</h3>
+                    <div>
+                        <i class="fa-regular fa-envelope get"></i>
+                        <p>mediaclub.sh@gmail.com</p>
+                    </div>
+
+                    <h3>Follow Us</h3>
+                    <div class="pro-links">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+
+                </div>
         </div>
-        <div class="form-section">
-            <h2>Contact Us</h2>
-            <form action="#">
-                <div class="input-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-                </div>
-                <div class="input-group">
-                    <input type="email" id="email" name="email" placeholder="Emal" required>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="subject" name="subject"placeholder="Subject" required>
-                </div>
-                <div class="input-group">
-                    <textarea id="message" name="message" placeholder="Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+
+        <div class="form">
+            <h4>Contact Us</h4>
+            <p>Tell us what we're missing</p>
+            <div class="form-row">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Class">
+            </div>
+            <div class="form-row">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="form-col">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-col">
+                <textarea name="" id="" cols="30" rows="8" placeholder="Write a message"></textarea>
+            </div>
+            <div class="form-col">
+                <button>Send message</button>
+            </div>
         </div>
-    </div>
+
+    </section>
+
    
 
 
