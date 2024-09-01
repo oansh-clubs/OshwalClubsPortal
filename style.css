@@ -848,6 +848,17 @@ footer img{
 /*Mobile-View*/
 
 @media(max-width:769px){
+
+    .container {
+        flex-direction: column; /* Stack image on top of form on smaller screens */
+    }
+    .image-section img {
+        height: auto; /* Let the image height adjust to maintain aspect ratio */
+    }
+    .form-section {
+        padding: 20px;
+    }
+    
     nav{
         padding: 15px 20px;
     }
@@ -950,11 +961,13 @@ footer img{
         border-radius: 10px;
         overflow: hidden;
         transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        z-index: 10000;
         
     }
     .dropdown_menu.open{
         height: 200px;
         position: fixed;
+        z-index: 10000;
     }
         
  
