@@ -414,12 +414,13 @@ nav .navigation ul li a:hover{
 
   .animated-button a{
     text-decoration: none;
+    color: white;
   }
   
   .animated-button svg {
     position: absolute;
     width: 24px;
-    fill: greenyellow;
+    fill: orangered;
     z-index: 9;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
