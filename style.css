@@ -893,6 +893,114 @@ footer img{
     color: white;
 }
 
+/*Register*/
+
+#Register{
+    padding: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#Register .form{
+    width: 100%;
+    background: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+#Register .form h2{
+    font-size: 24px;
+    color: #2c234d;
+    line-height: 30px;
+}
+
+#Register .form p{
+    color: #686875;
+    line-height: 24px;
+    padding-bottom: 25px;
+
+}
+
+#Register .form .form-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#Register .form .form-row input{
+    width: 48%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#Register .form .form-col input,
+#Register .form .form-col textarea{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#Register .form button{
+    font-size: .9rem;
+    padding: 13px 25px;
+    background: orangered;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+.form-select{
+    display: flex;
+    position: relative;
+    min-width: 50px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.select-box{
+    border: none;
+    padding: 0 30px 0 15px;
+    width: 100%;
+}
+#successMessage {
+  
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;    /*Change Accordigly*/
+    margin-top: 10px;
+}
+#successMessage{
+    position: absolute;
+    left: 30%;
+    margin-top: 280px;
+    width: 40%;
+    background-color: #FF8C00;
+}
+.successMessage {
+    text-align: center;
+}
+  
+.successMessage h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
 /*Menu-btn*/
 .dropdown_menu{
     display: none;
