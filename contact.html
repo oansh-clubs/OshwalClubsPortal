@@ -103,10 +103,12 @@
                 <div class="form-col">
                     <button>Send message</button>
                 </div>
+                
             </form>
-            <div id="successMessage" style="display:none;">
-                Your message has been received, We will get back to you as soon as possible.
-            </div>
+            
+        </div>
+        <div id="successMessage1" class="contactmsg" style="display:none;">
+            Your message has been received, We will get back to you as soon as possible.
         </div>
     </section>
 
@@ -167,7 +169,7 @@
                 mode: 'no-cors'
             }).then(() => {
                 form.reset();
-                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('successMessage1').style.display = 'block';
             }).catch(error => {
                 console.error('Error!', error.message);
             });
