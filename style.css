@@ -894,6 +894,31 @@ footer img{
     color: white;
 }
 
+#successMessage1 {
+  
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;    /*Change Accordigly*/
+    margin-top: 10px;
+}
+#successMessage1{
+    position: absolute;
+    left: 45%;
+    margin-top: 280px;
+    width: 45%;
+    background-color: #FF8C00;
+}
+.successMessage1 {
+    text-align: center;
+}
+  
+.successMessage1 h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
 /*Register*/
 
 #Register{
@@ -1013,6 +1038,14 @@ footer img{
 /*Mobile-View*/
 
 @media(max-width:769px){
+
+    #successMessage1{
+        position: absolute;
+        left: 20%;
+        margin-top: 800px;
+        width: 60%;
+        background-color: #FF8C00;
+    }
     nav{
         padding: 15px 20px;
     }
