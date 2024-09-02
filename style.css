@@ -405,7 +405,7 @@ nav .navigation ul li a:hover{
     background-color: inherit;
     border-radius: 100px;
     font-weight: 600;
-    color: orangered;
+    color: white;
     box-shadow: 0 0 0 2px orangered;
     cursor: pointer;
     overflow: hidden;
@@ -414,7 +414,7 @@ nav .navigation ul li a:hover{
 
   .animated-button a{
     text-decoration: none;
-    color: white;
+    color: black;
   }
   
   .animated-button svg {
@@ -440,7 +440,7 @@ nav .navigation ul li a:hover{
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: greenyellow;
+    background-color: orangered;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -455,7 +455,7 @@ nav .navigation ul li a:hover{
   
   .animated-button:hover {
     box-shadow: 0 0 0 12px transparent;
-    color: #212121;
+    color: white;
     border-radius: 12px;
   }
   
@@ -477,7 +477,7 @@ nav .navigation ul li a:hover{
   
   .animated-button:active {
     scale: 0.95;
-    box-shadow: 0 0 0 4px greenyellow;
+    box-shadow: 0 0 0 4px orangered;
   }
   
   .animated-button:hover .circle {
