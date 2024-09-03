@@ -1018,6 +1018,7 @@ footer img{
 #successMessage{
     position: absolute;
     left: 30%;
+    top: 400px;
     margin-top: 280px;
     width: 40%;
     background-color: #FF8C00;
