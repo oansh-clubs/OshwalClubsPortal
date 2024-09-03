@@ -1221,6 +1221,9 @@ footer img{
         width: 60%;
         background-color: #FF8C00;
     }
+    #Register .form{
+    margin-top: 0;
+}
     
 
 }
