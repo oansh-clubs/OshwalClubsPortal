@@ -937,7 +937,7 @@ footer img{
     background: #f7f6fa;
     padding: 40px;
     border-radius: 10px;
-    margin-bottom: 8px;
+    margin-bottom: -90px;
     margin-top: -150px;
 }
 
@@ -1222,7 +1222,8 @@ footer img{
         background-color: #FF8C00;
     }
     #Register .form{
-    margin-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
 }
     
 
