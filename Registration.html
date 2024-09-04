@@ -21,9 +21,9 @@
                 <i id="close-btn" class="fa-sharp fa-regular fa-circle-xmark"></i>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="clubs.html">Clubs</a></li>
+                <li><a class="active" href="clubs.html">Clubs</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             
         </div>
@@ -51,7 +51,7 @@
     <!--Contact-->
 
     <section id="Register">
-        <form id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSft1fc-mH6GIud6ks6eLDHRAQ97FvsKWQ91y7CdrSwoCqP5SQ/formResponse" method="post">
+        <form id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd4uTTbE63OQGbN92NWcWm4L2cdEg076monuuoYkcOum-wmZw/formResponse" method="post">
         
 
             <div class="form">
@@ -129,7 +129,6 @@
                 console.error('Error!', error.message);
             });
         });
-        
         </script>
 
    
@@ -151,7 +150,6 @@
     </footer>
 
 
-
     <!--Clubs-->
     <script>
         function showClubs(type) {
@@ -161,7 +159,7 @@
             var wednesdayClubs = document.getElementById('wednesdayClubs');
             var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
 
-            // Set active class based on type
+            
             if (type === 'wednesday') {
                 wednesdayTab.classList.add('active');
                 nonWednesdayTab.classList.remove('active');
@@ -196,4 +194,5 @@
 
 
 </body>
+
 </html>
