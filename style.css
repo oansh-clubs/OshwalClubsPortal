@@ -351,13 +351,14 @@ nav .navigation ul li a:hover{
 #clubs-details .official{
     display: inline-flex;
     justify-content: space-between;
-    gap: 7px;
+    gap: 15px;
+    margin-top: 40px;
 }
 
 #clubs-details .official-row{
     display: inline-flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
 
 #clubs-details .official-row img{
