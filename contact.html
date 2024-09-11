@@ -83,7 +83,7 @@
                 </div>
         </div>
 
-        <div class="form"></div>
+        <div class="form">
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScJGE-NUTrjB-Cd0KnoD4kjLja2BeYQfWHLAx0hmNFDwn3Xwg/formResponse" method="post">
                 <h4>Contact Us</h4>
                 <p>Tell us what we're missing</p>
@@ -132,7 +132,7 @@
 
 
 
-    <!--Clubs-->
+    <!--Clubs and Message-->
     <script>
         function showClubs(type) {
            
@@ -158,22 +158,7 @@
         function redirectToPage(pageUrl) {
             window.location.href = pageUrl;
         }
-    </script>
-
-    <!--Menu-btn-->
-    <script>
-        const toggleBtn = document.querySelector(".toggle_btn")
-        const toggleBtnIcon = document.querySelector(".toggle_btn i")
-        const dropDownMenu = document.querySelector(".dropdown_menu")
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle("open")
-        }
-    </script>
-
-
-    <!--Message-->
-    <script>
+//Message
         document.getElementById('contact').addEventListener('submit', function(event) {
             event.preventDefault();
             const form = event.target;
@@ -192,7 +177,18 @@
                 console.error('Error!', error.message);
             });
         });
+        
+    </script>
 
+    <!--Menu-btn-->
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+        }
     </script>
 
 
