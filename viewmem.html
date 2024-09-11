@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSHWAL CLUBS PORTAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo2.png">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+
+    <nav>
+        <img src="./images/logo2.png" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a href="database.html">Attendance</a></li>
+                <li><a class="active" href="viewmem.html">View Members</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+            
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="dropdown_menu">
+        <li><a href="login.html">Attendance</a></li>
+        <li><a href="viewmem.html">View Members</a></li>
+        <li><a href="login.html">Logout</a></li>
+        
+
+    </div>
+
+    <!--Home-->
+
+    <section id="database">
+        <center><iframe src="https://docs.google.com/spreadsheets/d/1PdZUUxswLppqbH3kSTHvNEhf9JRBh3_dlVH7hMPVDqs/edit?usp=sharingwidget=true&amp;rm=minimal&amp;single=true&amp;"></iframe></center>
+
+
+
+    </section>
+
+    <!--Footer-->
+    
+    <footer>
+        <div class="copyright">
+            <p></p>Copyright ©2024 Media Hub All Rights Reserved</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <img src="./images/logo(MH).png" alt="">
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--Clubs-->
+    <script>
+        function showClubs(type) {
+           
+            var wednesdayTab = document.getElementById('wednesdayTab');
+            var nonWednesdayTab = document.getElementById('nonWednesdayTab');
+            var wednesdayClubs = document.getElementById('wednesdayClubs');
+            var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
+
+            // Set active class based on type
+            if (type === 'wednesday') {
+                wednesdayTab.classList.add('active');
+                nonWednesdayTab.classList.remove('active');
+                wednesdayClubs.classList.add('active');
+                nonWednesdayClubs.classList.remove('active');
+            } else {
+                wednesdayTab.classList.remove('active');
+                nonWednesdayTab.classList.add('active');
+                wednesdayClubs.classList.remove('active');
+                nonWednesdayClubs.classList.add('active');
+            }
+        }
+
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    <!--Menu-btn-->
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+        }
+    </script>
+
+    <!--P-->
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+    
+
+
+
+
+</body>
+</html>
+
+

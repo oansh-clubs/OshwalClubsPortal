@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSHWAL CLUBS PORTAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo2.png">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav>
+        <img src="./images/logo2.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="close-btn" class="fa-sharp fa-regular fa-circle-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+            </ul>
+            
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        
+
+    </div>
+
+    <section id="bg">
+
+    </section>
+
+
+    <section id="login">
+        <div class="l">
+            <form">
+            <h1>Login</h1>
+            <div class="text-box">
+                <input type="text" placeholder="Username" id="username" required>
+            </div>
+            <div class="text-box">
+                <input type="password" placeholder="Password" id="password" required>
+            </div>
+            <input type="Login" value="Login" class="l-btn" onclick="func()">
+            </form>
+            <div id="successMessage" style="display:none;">
+                You have been registered at your select club. Enjoy!
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<!--Validation-->
+
+<script>
+    function func(){
+        var user = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (user == "MH-Secretary" && password == "V.MH@24/25"){
+            window.location.assign("database.html")
+        }
+        else
+        if (user == "MH-Chairman" && password == "mrithul@MH2008"){
+            window.location.assign("database.html")
+        }
+        else
+        if (user == "MH-VChair" && password == "Media$Bus56"){
+            window.location.assign("database.html")
+        }
+        else
+        if (user == "MH-Patron" && password == "4321"){
+            window.location.assign("database.html")
+        }
+        else{
+            alert("Username or password is incorrect")
+        }
+
+    }
+
+</script>
+
+<!--P-->
+
+<script>
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && (event.key === 'u' || event.key === 'U')) {
+            event.preventDefault();
+        }
+        if (event.keyCode === 123) { // F12 key
+            event.preventDefault();
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+<script type="text/javascript">
+    function preventBack() {
+        window.history.forward();
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+</script>
+    
+    
+
+

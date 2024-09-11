@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSHWAL CLUBS PORTAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo2.png">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+
+    <nav>
+        <img src="./images/logo2.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="close-btn" class="fa-sharp fa-regular fa-circle-xmark"></i>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+
+        
+
+    </div>
+
+    <!--Home-->
+
+    <section id="home">
+        <h2>Oshwal Senior High Clubs Portal</h2>
+        <p>
+            Club activities at OAN-SH foster a strong sense of community and collaboration among students, encouraging them to work together towards shared objectives. These clubs provide invaluable opportunities for students to develop essential social skills, interacting with peers from diverse backgrounds and creating a more inclusive environment.</p>
+        <div class="btn">
+            <a class="orange" href="about.html">Learn More</a>
+            <a class="blue" href="clubs.html">Visit Clubs</a>
+
+        </div>
+    </section>
+
+    <!--Features-->
+    <section id="features">
+        <h1>Features</h1>
+        <p></p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-sharp fa-solid fa-eye"></i>
+                <h3>View</h3>
+                <p>Explore all the clubs in one place</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-sharp fa-regular fa-registered"></i>
+                <h3>Register</h3>
+                <p>Get started by registering your favourite clubs</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-sharp fa-regular fa-envelope"></i>
+                <h3>Contact</h3>
+                <p>Let us know if you've any difficulties in exploring our website</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Clubs-->
+    <section id="club">
+        <h1>Clubs</h1>
+        <div class="tabs">
+            <div id="wednesdayTab" class="tab active" onclick="showClubs('wednesday')">Wednesday Clubs</div>
+            <div id="nonWednesdayTab" class="tab" onclick="showClubs('nonWednesday')">Non-Wednesday Clubs</div>
+        </div>
+        <div id="wednesdayClubs" class="day active">
+        <div class="clubs-box">
+            
+
+            <div onclick="window.location.href='Book.html'" class="clubs">
+                <img src="./images/book-club.jpg" alt="">
+                <div class="details">
+                    <h6>Book Club</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='F-Aid.html'" class="clubs">
+                <img src="./images/F-Aid.jpg" alt="">
+                <div class="details">
+                    <h6>First Aid</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='MH.html'" class="clubs">
+                <img src="./images/media-hub.jpg" alt="">
+                <div class="details">
+                    <h6>Media Hub</h6>
+                    <div class="star">
+                        <span>Venue: B-2-10</span><br>
+                        <span>Club Patron: Mr. Gaitho</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Science.html'" class="clubs">
+                <img src="./images/science-club.jpg" alt="">
+                <div class="details">
+                    <h6>Science Club</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Debate.html'" class="clubs">
+                <img src="./images/debate-club.png" alt="">
+                <div class="details">
+                    <h6>Debate Club</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Gym.html'" class="clubs">
+                <img src="/images/gym.png" alt="">
+                <div class="details">
+                    <h6>Gym</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Badminton.html'" class="clubs">
+                <img src="/images/badminton.png" alt="">
+                <div class="details">
+                    <h6>Badminton</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='TT.html'" class="clubs">
+                <img src="./images/table-tennis.png" alt="">
+                <div class="details">
+                    <h6>Table Tennis</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Interact.html'" class="clubs">
+                <img src="./images/interact.png" alt="">
+                <div class="details">
+                    <h6>Interact</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Leo.html'" class="clubs">
+                <img src="./images/LEO.jpg" alt="">
+                <div class="details">
+                    <h6>Leo</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Visual.html'" class="clubs">
+                <img src="./images/visual arts.jpg" alt="">
+                <div class="details">
+                    <h6>Visual Art</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Wildlife.html'" class="clubs">
+                <img src="./images/wildlife.jpg" alt="">
+                <div class="details">
+                    <h6>Wildlife</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Peer.html'" class="clubs">
+                <img src="./images/peer.jpg" alt="">
+                <div class="details">
+                    <h6>Peer Counselling</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Eco.html'" class="clubs">
+                <img src="./images/eco.jpg" alt="">
+                <div class="details">
+                    <h6>Eco</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Swahili.html'" class="clubs">
+                <img src="./images/swahili.jpg" alt="">
+                <div class="details">
+                    <h6>Swahili</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Board.html'" class="clubs">
+                <img src="./images/board-games.jpg" alt="">
+                <div class="details">
+                    <h6>Board Games</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Football.html'" class="clubs">
+                <img src="./images/football.jpg" alt="">
+                <div class="details">
+                    <h6>Football</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='VBC.html'" class="clubs">
+                <img src="./images/vbc.png" alt="">
+                <div class="details">
+                    <h6>Basketball, Volleyball and Football</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='CA.html'" class="clubs">
+                <img src="./images/current affairs.jpg" alt="">
+                <div class="details">
+                    <h6>Current Affairs</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Entertainment.html'" class="clubs">
+                <img src="./images/entertainment.jpg" alt="">
+                <div class="details">
+                    <h6>Entertainment Club</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+            <!--NON-WEDNESDAY CLUBS-->
+        <div id="nonWednesdayClubs" class="day">
+        <div class="clubs-box">
+            <div onclick="window.location.href='Public.html'" class="clubs">
+                <img src="./images/publicspeaking.jpg" alt="">
+                <div class="details">
+                    <h6>Public Speaking</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Mountain.html'" class="clubs">
+                <img src="./images/mountaineering.jpg" alt="">
+                <div class="details">
+                    <h6>Mountaineering</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='TOF.html'" class="clubs">
+                <img src="./images/touch.jpg" alt="">
+                <div class="details">
+                    <h6>Touch Of Humanity</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='PA.html'" class="clubs">
+                <img src="./images/PA.jpg" alt="">
+                <div class="details">
+                    <h6>PA</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='EAMUN.html'" class="clubs">
+                <img src="./images/eamun.jpg" alt="">
+                <div class="details">
+                    <h6>EAMUN</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='WSC.html'" class="clubs">
+                <img src="./images/wsc.png" alt="">
+                <div class="details">
+                    <h6>World Scholars Cup</h6>
+                    <div class="star">
+                        <span>Venue:</span><br>
+                        <span>Club Patron:</span><br>
+                        <span>Enrolled: 0</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+
+    </section>
+
+
+    <!--Profile-->
+    <section id="member">
+        <h1>Team Members<h1>
+            <div class="member-box">
+
+                <div class="profile">
+                    <img src="./images/person.png" alt="">
+                    <p>Mr. Gaitho</p>
+                    <h6>Media Hub Club Patron</h6>
+                    <div class="pro-links">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="./images/person.png" alt="">
+                    <p>Vishal</p>
+                    <h6>Secretary</h6>
+                    <div class="pro-links">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-github"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="./images/person.png" alt="">
+                    <p>Mrithul</p>
+                    <h6>Chairman</h6>
+                    <div class="pro-links">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="./images/person.png" alt="">
+                    <p>Nidhish</p>
+                    <h6>Vice Chairman</h6>
+                    <div class="pro-links">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+
+                    </div>
+
+                </div>
+                
+            </div>
+    </section>
+
+    <!--Footer-->
+    
+    <footer>
+        <div class="copyright">
+            <p></p>Copyright ©2024 Media Hub All Rights Reserved</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <img src="./images/logo(MH).png" alt="">
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--Clubs-->
+    <script>
+        function showClubs(type) {
+           
+            var wednesdayTab = document.getElementById('wednesdayTab');
+            var nonWednesdayTab = document.getElementById('nonWednesdayTab');
+            var wednesdayClubs = document.getElementById('wednesdayClubs');
+            var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
+
+            // Set active class based on type
+            if (type === 'wednesday') {
+                wednesdayTab.classList.add('active');
+                nonWednesdayTab.classList.remove('active');
+                wednesdayClubs.classList.add('active');
+                nonWednesdayClubs.classList.remove('active');
+            } else {
+                wednesdayTab.classList.remove('active');
+                nonWednesdayTab.classList.add('active');
+                wednesdayClubs.classList.remove('active');
+                nonWednesdayClubs.classList.add('active');
+            }
+        }
+
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    <!--Menu-btn-->
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

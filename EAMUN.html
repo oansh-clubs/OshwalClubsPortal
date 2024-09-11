@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSHWAL CLUBS PORTAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo2.png">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+
+    <nav>
+        <img src="./images/logo2.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="close-btn" class="fa-sharp fa-regular fa-circle-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="clubs.html">Clubs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+
+    </div>
+
+   <!--Clubs-Home-->
+
+   <section id="clubs-home">
+        <h2>Clubs</h2>
+    </section>
+
+    <!--Clubs-Details-->
+    
+    <!--Media Hub-->
+    <section id="clubs-details">
+        <div class="overview">
+            <img class="club-img" src="./images/eamun.jpg" alt="">
+            <div class="club-head">
+                <div class="club-name">
+                    <h2>EAMUN</h2><br>
+                    <p></p>
+                </div>
+            </div><br>
+            <h3>Club Officials</h3>
+            <br>
+            <div class="official">
+                <img src="./images/person.png" alt="">
+                <div class="official-details">
+                    <h5></h5>
+                    <p>Club Patron</p>
+                </div>
+                <br>
+                <img src="./images/person.png" alt="">
+                <div class="official-details">
+                    <h5>Lalith</h5>
+                    <p>Club Official</p>
+                </div>
+                <br>
+                <img src="./images/person.png" alt="">
+                <div class="official-details">
+                    <h5>Rachith</h5>
+                    <p>Club Official</p>
+                </div>
+                <br>
+                <img src="./images/person.png" alt="">
+                <div class="official-details">
+                    <h5>Hemil</h5>
+                    <p>Club Official</p>
+                </div>
+
+            </div><br>
+            <hr>
+            <h3>Mission Statement</h3>
+            <p></p>
+            <br>
+            <hr>
+            <h3>Vision Statement</h3>
+            <p></p>
+            <br>
+            <hr>
+            <h3>Goals</h3>
+            <p></p>
+            <br>
+            <hr>
+            <h3>Activities</h3>
+            <br>
+            <div class="activities">
+                <p><i class="fa-regular fa-circle-dot"></i>Mock Debates</p>
+                <p><i class="fa-regular fa-circle-dot"></i>Trainings</p>
+                <p><i class="fa-regular fa-circle-dot"></i>Main Conference</p>
+            </div>
+
+            <br>
+            <h3>Achievements</h3>
+            <br>
+            <div class="activities">
+                <p><i class="fa-regular fa-circle-dot"></i>Awards</p>
+            </div>
+
+
+
+            
+        </div>
+
+        <div class="register">
+            <p><i class="fa-solid fa-map"></i>Venue:</p>
+            <p><i class="fa-regular fa-address-card"></i>Phone:</p>
+            <p><i class="fa-solid fa-envelope"></i>Mail:</p>
+
+            <div class="r-btn">
+                <a href="Registration.html"><div class="animated-button">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">Register</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+            </div></a>
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+
+    <!--Footer-->
+    
+    <footer>
+        <div class="copyright">
+            <p></p>Copyright ©2024 Media Hub All Rights Reserved</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <img src="./images/logo(MH).png" alt="">
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--Clubs-->
+    <script>
+        function showClubs(type) {
+           
+            var wednesdayTab = document.getElementById('wednesdayTab');
+            var nonWednesdayTab = document.getElementById('nonWednesdayTab');
+            var wednesdayClubs = document.getElementById('wednesdayClubs');
+            var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
+
+            // Set active class based on type
+            if (type === 'wednesday') {
+                wednesdayTab.classList.add('active');
+                nonWednesdayTab.classList.remove('active');
+                wednesdayClubs.classList.add('active');
+                nonWednesdayClubs.classList.remove('active');
+            } else {
+                wednesdayTab.classList.remove('active');
+                nonWednesdayTab.classList.add('active');
+                wednesdayClubs.classList.remove('active');
+                nonWednesdayClubs.classList.add('active');
+            }
+        }
+
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    <!--Menu-btn-->
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
