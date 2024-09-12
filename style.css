@@ -1855,6 +1855,32 @@ footer img{
         width: 350px;
         height: 90vh;
     }
+    /*About*/
+    .content h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .content p {
+        margin: 10px 0;
+        font-size: 10px;
+        color: #555;
+    }
+    
+    .content .role {
+        font-size: 15px;
+        color:#FF8C00;
+    }
+    .slide .mhslide{
+        height: 50%;
+    }
+    .slide .content .person{
+        height: 80px;
+    }
+    .slides{
+        height: 400px;
+    }
 
     
     
