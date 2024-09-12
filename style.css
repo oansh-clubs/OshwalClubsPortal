@@ -1881,6 +1881,9 @@ footer img{
     .slides{
         height: 400px;
     }
+    #credits {
+        margin-top: -150px;
+    }
 
     
     
