@@ -890,7 +890,117 @@ footer img{
     font-size: 16px;
     color: #29303B;
 }
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
 
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 550px;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slide .content .person{
+    border-radius: 25%;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    height: 200px;
+    width: auto;
+}
+.slide img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .mhslide{
+    object-fit: fill;
+    transform: scale(0.8);
+    
+}
+.content {
+    width: 50%;
+    padding: 5%;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.content h2 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.content .role {
+    font-size: 20px;
+    color:#FF8C00;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-links i {
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    cursor: pointer;
+    transform: scale(1.5);
+    padding-right: 5px;
+}
+
+.social-links i:hover {
+    color: #000;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    pointer-events: all;
+}
 /*Credits*/
 
 #credits{
