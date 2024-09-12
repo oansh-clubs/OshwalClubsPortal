@@ -87,50 +87,110 @@
     <!--Credits-->
 
     <section id="credits">
-        <h1>Credits</h1>
-        <div class="credits-img">
-            <img src="./images/MH LOGO DARK.png" alt="">
-        </div>
+        <h1 style="margin-bottom: 40px;">Credits</h1>
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/logo1.png" alt="Slide 1" class="mhslide">
+                    <div class="content">
+                        <h2>Media Hub</h2>
+                        <p class="role"></p>
+                        <p style="font-size: 18px;">At our student-driven organization, we focus on nurturing creativity and technical skills through photography and coding competitions. We provide a platform where students can 
+                            showcase their talents, learn from each other, and receive constructive feedback. Our aim is to empower participants to explore their passions, develop their
+                            abilities, and foster a supportive community of learning and growth in photography and coding.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/oanmediahub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/mediahub_24/"><i class="fab fa-instagram"></i></a>
+                            
+                            
 
-
-        <section id="member-credits">
-                <div class="member-box">
-    
-                    <div class="profile">
-                        <img src="./images/person.png" alt="">
-                        <p>Vishal</p>
-                        <h6>Secretary</h6>
-                        <div class="pro-links">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fa-brands fa-github"></i>
-    
                         </div>
-    
                     </div>
-    
-                    <div class="profile">
-                        <img src="./images/person.png" alt="">
-                        <p>Mrithul</p>
-                        <h6>Chairman</h6>
-                        <div class="pro-links">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fa-brands fa-github"></i>
-    
-                        </div>
-    
-                    </div>
-    
-                    
                 </div>
-        </section>
-
+                <div class="slide">
+                    <div class="content" style="background-color: #fff;">
+                        <img  class="person" src="./images/person.png" alt="">
+                        <h2>Mrithul P Vijeesh</h2>
+                        <p class="role">Club-Chairman (Developer)</p>
+                        <p>My Description.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/mrithulp" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/_https.mr1thxl/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/0716501262" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img class="person" src="./images/person.png" alt="">
+                        <h2>Vishal Jaganathan</h2>
+                        <p class="role">Club-Secretary (Developer)</p>
+                        <p>Vishal's Description</p>
+                        <div class="social-links">
+                            <a href="https://github.com/V-06-coder" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <img class="person" src="./images/person.png" alt="">
+                        <h2>Yaana Asarsa</h2>
+                        <p class="role">Club-Head Of ICT</p>
+                        <p>Yaana's description</p>
+                        <div class="social-links">
+                            <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/yaana07_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="content" style="background-color: #fff;">
+                        <img class="person" src="./images/person.png" alt="" >
+                        <h2>TK Gaitho</h2>
+                        <p class="role">Club-Patron</p>
+                        <p>Mr Gaitho's description</p>
+                        <div class="social-links">
+                            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+            <div class="nav">
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+        </div>
         
-
-
-
-
-
+        <script>
+            const slides = document.querySelector('.slides');
+            const slide = document.querySelectorAll('.slide');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+            let currentIndex = 0;
+        
+            function showSlide(index) {
+                if (index >= slide.length) {
+                    currentIndex = 0;
+                } else if (index < 0) {
+                    currentIndex = slide.length - 1;
+                } else {
+                    currentIndex = index;
+                }
+                slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+            } 
+        
+            prevButton.addEventListener('click', () => {
+                showSlide(currentIndex - 1);
+            });
+        
+            nextButton.addEventListener('click', () => {
+                showSlide(currentIndex + 1);
+            });
+        
+            showSlide(currentIndex);
+        </script>
     </section>
 
     
@@ -161,32 +221,6 @@
 
 
 
-    <!--Clubs-->
-    <script>
-        function showClubs(type) {
-           
-            var wednesdayTab = document.getElementById('wednesdayTab');
-            var nonWednesdayTab = document.getElementById('nonWednesdayTab');
-            var wednesdayClubs = document.getElementById('wednesdayClubs');
-            var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
-
-            // Set active class based on type
-            if (type === 'wednesday') {
-                wednesdayTab.classList.add('active');
-                nonWednesdayTab.classList.remove('active');
-                wednesdayClubs.classList.add('active');
-                nonWednesdayClubs.classList.remove('active');
-            } else {
-                wednesdayTab.classList.remove('active');
-                nonWednesdayTab.classList.add('active');
-                wednesdayClubs.classList.remove('active');
-                nonWednesdayClubs.classList.add('active');
-            }
-        }
-
-        function redirectToPage(pageUrl) {
-            window.location.href = pageUrl;
-        }
     </script>
 
      <!--Menu-btn-->
