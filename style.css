@@ -890,6 +890,9 @@ footer img{
     font-size: 16px;
     color: #29303B;
 }
+
+
+
 .slider-container {
     position: relative;
     width: 100%;
@@ -1001,6 +1004,8 @@ footer img{
     cursor: pointer;
     pointer-events: all;
 }
+
+
 /*Credits*/
 
 #credits{
@@ -1415,8 +1420,8 @@ footer img{
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    min-height: 100vh;
-    height: 20vh;
+    min-height: 100%;
+    height: 100%;
     width: 100%;
 }
 
@@ -1489,10 +1494,57 @@ footer img{
     padding-top: 40px;
 }
 
+
+
 #database iframe{
     width: 1500px;
-    height: 105vh;
+    height: 100vh;
 }
+
+#viewmem{
+    background-color: white;
+    width: 100%;
+    height: 230vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#viewmem iframe{
+    width: 1500px;
+    height: 100vh;
+}
+
+
+/*Upload*/
+
+#upload{
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#upload iframe{
+    width: 1500px;
+    height: 5vh;
+    margin-bottom: -110px;
+}
+
+
+  
 
 /*Mobile-View*/
 
@@ -1819,8 +1871,8 @@ footer img{
         padding: 0;
         text-decoration: none;
         box-sizing: border-box;
-        min-height: 100vh;
-        height: 20vh;
+        min-height: 0vh;
+        height: 100%;
         width: 100%;
     }
     
@@ -1855,34 +1907,27 @@ footer img{
         width: 350px;
         height: 90vh;
     }
-    /*About*/
-    .content h2 {
-        margin: 0;
-        font-size: 20px;
-        font-weight: bold;
+
+    /*View Members*/
+
+
+    #viewmem{
+        padding-top: 0px;
     }
-    
-    .content p {
-        margin: 10px 0;
-        font-size: 10px;
-        color: #555;
+
+    #viewmem iframe{
+        width: 350px;
+        height: 90vh;
     }
-    
-    .content .role {
-        font-size: 15px;
-        color:#FF8C00;
+
+    /*Upload*/
+    #upload{
+        padding-top: 0px;
     }
-    .slide .mhslide{
-        height: 50%;
-    }
-    .slide .content .person{
-        height: 80px;
-    }
-    .slides{
-        height: 400px;
-    }
-    #credits {
-        margin-top: -150px;
+
+    #upload iframe{
+        width: 350px;
+        height: 90vh;
     }
 
     
