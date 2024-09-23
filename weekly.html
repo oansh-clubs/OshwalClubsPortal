@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+   
     <title>Weekly Report</title>
     <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -531,7 +532,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="main.js"></script>
+    
   </body>
 
 <style>
@@ -945,104 +946,6 @@ main {
   margin-bottom: 10px;
 }
 
-/* About content */
-.about-content {
-  display: block;
-  justify-content: space-between;
-  gap: 20px;
-  height: 100vh;
-  width: 130vh;
-}
-
-
-.about-content .upload iframe{
-  width: 90%;
-  height: 5vh;
-}
-
-.about-content .folder iframe{
-  width: 90%;
-  height: 70vh;
-}
-
-/* Lists in About Me */
-.about-content ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.about-content ul li {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.portfolio-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 20px;
-  justify-content: center;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: repeat(3, 320px);
-  margin: 90px;
-
-}
-.portfolio-content .box p{
-  font-size: 12px;
-}
-.portfolio-content .box h3{
-  font-size: 1.2rem;
-}
-
-.portfolioimgs{
-  height: 200px;
-  width: auto;
-  align-items: center;
-  margin-left: 15%;
-}
-
-.portfolio-content .box{
-  background-color: #151b23;
-}
-.portfolio-content .box .site{
-  text-decoration: none;
-  margin-bottom: 5px;
-  color: #45a29e;
-  display: block;
-  transition: 0.5s;
-
-
-}
-.portfolio-content .box .site:hover{
-  color: #ffffff;
-  transition: 0.5s;
-
-
-}
-#portfolio-slide .slide-container{
-  height: 90vh; /* Adjust this to your desired height */
-  overflow-y: scroll;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  padding-right: 10px; /* Adjust to avoid scrollbars overlaying content */
-  scrollbar-width: 1px; /* For Firefox */
-  scrollbar-color: transparent;
-}
-
-#portfolio-slide .slide-container::-webkit-scrollbar {
-  width: 5px; 
-}
-#portfolio-slide .slide-container::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 10px;
-}
-#portfolio-slide .slide-container::-webkit-scrollbar-thumb {
-  background-color: #162230;
-  border-radius: 10px; 
-  border: 0.5px solid #45a29e;
- 
-}
-
 
 
 
@@ -1050,13 +953,14 @@ main {
 @media (max-width: 769px) {
   body {
     overflow: hidden; /* Disable scroll */
+    overflow-x: hidden;
   }
   
   .slide-container {
     max-width: 95vw; /* Max width is 95% of the viewport */
   }
   .sidebar {
-    margin-top: 100px;
+    margin-top: 0px;
     width: 10px;
     height: 80vh;
     border-radius: 30px;
@@ -1074,6 +978,7 @@ main {
 @media(max-width:769px){
     nav{
         padding: 15px 20px;
+        width: 100vw;
     }
     nav img{
         width: 60px;
@@ -1102,6 +1007,7 @@ main {
         justify-content: flex-start;
         align-items: flex-start;
         transition: 0.3s ease;
+        display: none;
     }
     nav .navigation ul.active{
         right: 0;
@@ -1136,7 +1042,7 @@ main {
         text-align: left;
         display: block;
         position: fixed;
-        right: 1rem;
+        left: 45vw;
         height: 0;
         top: 80px;
         width: 200px;
@@ -1214,8 +1120,11 @@ main {
         flex-direction: row;
         align-items: center;
         width: 40%;
-        height: 20px;
+        height: 60px;
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
     }
+    
   .sidebar .user {
     display: none;
   }
@@ -1306,20 +1215,7 @@ function showSlide(slideId) {
 
   <!--P-->
 
-<script>
-  document.addEventListener('keydown', function(event) {
-      if (event.ctrlKey && (event.key === 'u' || event.key === 'U')) {
-          event.preventDefault();
-      }
-      if (event.keyCode === 123) { // F12 key
-          event.preventDefault();
-      }
-  });
-</script>
 
-<script>
-  document.addEventListener('contextmenu', event => event.preventDefault());
-</script>
 
 <script type="text/javascript">
   function preventBack() {
